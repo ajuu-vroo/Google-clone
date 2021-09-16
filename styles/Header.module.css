@@ -1,0 +1,61 @@
+.header{
+    display: flex;
+    align-items:center;;
+    justify-content: flex-end;
+    margin-top: 7px;
+}
+.header > p{
+    font-size: 14px;
+    padding-right: 10px;
+}
+.header > p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.header > button{
+    color: white;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    width: 95px;
+    height: 35px;
+    border-radius: 4px;
+    margin-right: 17px;
+    margin-left: 10px;
+}
+.header > button:hover{
+    background: #247ff6;
+    box-shadow: 0 0.4px 2px blue;
+    cursor: pointer;
+}
+.icon{
+    margin-left: 6px;
+    margin-right: 4px;
+    color: #5f6368;
+    padding:10px !important;
+    font-size: 45px !important;
+}
+.icon:hover{
+    background-color: #eeeff1;
+    cursor: pointer;
+    border-radius: 100px;
+
+}
+.userIcon{
+    object-fit: contain;
+    max-height: 55px;
+    border-radius: 100px;
+    margin-right: 13px;
+    padding-left: 2px;
+    padding: 8px
+}
+.userIcon:hover{
+    cursor: pointer;
+    background-color: #eeeff1;
+
+}
+@media only screen and (max-width: 415px) {
+    .header {
+      padding-left: 19rem;
+      width: fit-content;
+    }
+  }

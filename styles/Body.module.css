@@ -1,0 +1,92 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.body >img{
+    object-fit: contain;
+    max-width: 270px;
+    margin-bottom: 20px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(230, 227, 227);
+    height: 44px;
+    width: 587px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.search:hover{
+    box-shadow: 0px 1px 4px rgb(138, 138, 138);
+    transition: 0.1s;
+}
+.search >input{
+    background: none;
+    border: none;
+    width: 500px;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+
+}
+
+.search > input::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url("https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times.svg") no-repeat 50% 50%;
+  background-size: contain;
+  pointer-events: none;
+}
+.icon1{
+    color: rgb(167, 165, 165);
+    font-size: 20px !important;
+    margin-right: 10px;
+}
+.icon2 :hover{
+    color: rgb(65, 129, 248);
+    transition: 0.6s;
+    cursor: pointer;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns >button{
+    color: #3c4043;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    min-width: 127px;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid #f8f9fa;
+    margin: 7px;
+}
+
+.btns > button:hover{
+    border: 1px solid rgb(224, 224, 224);
+    cursor: pointer;
+    box-shadow: 0.4px 0 3 gray;
+}
+
+.btns > button:active,
+.btns > button:focus{
+    box-shadow: 0 0 1.4px rgb(0, 0, 255);
+    outline: none;
+ }
+ @media only screen and (max-width: 415px) {
+    .body {
+      padding-left: 1rem;
+      padding-top: 3rem;
+      width: fit-content;
+    }
+  }

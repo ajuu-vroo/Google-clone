@@ -1,0 +1,149 @@
+.header{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(216, 216, 216);;
+}
+.container1{
+    margin-right: 7px;
+    margin-left: 21px;
+    margin-top: -28px;
+}
+.container1 >img{
+    object-fit: contain;
+    width: 96px;
+    cursor: pointer;
+}
+.text{
+    display: flex;
+    margin-top: -20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.text >p{
+    display: flex;
+    color: #5f6368 !important;
+    font-size: 13px !important;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.text >p:hover{
+    color: #4141ff !important;
+    font-size: 13px !important;
+}
+.container2{
+    margin-left: 40px;
+    margin-right: 200px;
+    margin-top: 30px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(230, 227, 227);
+    height: 44px;
+    width: 700px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 2px rgb(182, 182, 182);
+}
+.search:hover{
+    box-shadow: 0px 1px 4px rgb(138, 138, 138);
+}
+.search >input{
+    background: none;
+    border: none;
+    width: 600px;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+
+}
+
+.search > input::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url("https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times.svg") no-repeat 50% 50%;
+  background-size: contain;
+  pointer-events: none;
+}
+.icon1{
+    color: rgb(65, 129, 248);
+    font-size: 22px !important;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.icon2{
+    color: rgb(65, 129, 248);
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.container3 > button{
+    color: white;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    width: 95px;
+    height: 35px;
+    border-radius: 4px;
+    margin-right: 19px;
+    margin-left: 10px;
+}
+.container3{
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: 90px;
+}
+.container3 > button:hover{
+    background: #247ff6;
+    box-shadow: 0 0.4px 2px blue;
+    cursor: pointer;
+}
+.icon3{
+    margin-left: 6px;
+    margin-right: 4px;
+    color: #5f6368;
+    padding:10px !important;
+    font-size: 45px !important;
+}
+.icon3:hover{
+    background-color: #eeeff1;
+    cursor: pointer;
+    border-radius: 100px;
+
+}
+
+.line{
+    font-size: 26px;
+    padding-bottom: 4.8px;
+    color: rgb(216, 216, 216);
+    padding-right: 4px;
+    font-weight: lighter;
+}
+.selected{
+    color: #4141ff !important;
+    border-bottom: 4px solid #4141ff;
+    font-size: 14px !important;
+}
+.userIcon{
+    object-fit: contain;
+    max-height: 55px;
+    border-radius: 100px;
+    padding-left: 2px;
+    padding: 8px
+}
+.userIcon:hover{
+    cursor: pointer;
+    background-color: #eeeff1;
+}
+
+@media only screen and (max-width: 415px) {
+    .header {
+      
+    }
+  }
