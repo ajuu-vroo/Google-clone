@@ -37,15 +37,17 @@ export default function HeaderSearch() {
                 src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="google..com" />
             </div>
             <div className={styles.container2}>
-                <div className={styles.search}>
+                <form className={styles.search} onSubmit={searchIt}>
                     
                     <input type="search" defaultValue={router.query.term} ref={inputRef} />
                     <div className={styles.line}>
                         |
                     </div>
-                    <SearchIcon className={styles.icon1} onClick={searchIt} />
+                    <button type='submit' className={styles.submitButton}>
+                    <SearchIcon className={styles.icon1} />
                     <MicIcon className={styles.icon2} />
-                </div>
+                    </button>
+                </form>
 
                 <div className={styles.text}>
                     <div className={styles.selected}>
@@ -70,6 +72,17 @@ export default function HeaderSearch() {
             </div>
 
         </div>
+        <div className={styles.headerMobile}>
+            <div className={styles.container4}>
+                <img onClick={goBack}
+                src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="google..com" />
+            </div>
+            <form className={styles.container5} onSubmit={searchIt}>
+                    
+                    <input type="search" defaultValue={router.query.term} ref={inputRef} />                    
+            </form>
+        </div>
+
         </>
     )
 }

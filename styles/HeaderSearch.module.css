@@ -142,8 +142,12 @@
     background-color: #eeeff1;
 }
 
-@media only screen and (max-width: 415px) {
-    .header {
-      
-    }
-  }
+.submitButton{
+    outline: none;
+    border: none;
+    background-color: inherit;
+}
+.headerMobile{
+    display: none;
+}
+

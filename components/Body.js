@@ -17,19 +17,19 @@ function Body() {
     }
 
     return (
-        <div className={styles.body}>
+        <form className={styles.body} onSubmit={searchIt}>
             <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google.com"/>
             <div className={styles.search}>
                 <SearchIcon className={styles.icon1} />
-                <input type="search" ref={inputRef}/>
+                <input required type="search" ref={inputRef}/>
                 <MicIcon className={styles.icon2} />
             </div>
             <div className={styles.btns}>
-                <button onClick={searchIt}>Google Search</button>
+                <button type='submit'>Google Search</button>
                 <button>I'm Feeling Lucky</button>
             </div>
             
-        </div>
+        </form>
     )
 }
 
