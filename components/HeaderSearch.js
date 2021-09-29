@@ -25,7 +25,7 @@ export default function HeaderSearch() {
 
     function searchIt(e){
         e.preventDefault();
-        const term = inputRef.current.value;
+        const term = inputRef.current?.value;
 
         router.push(`/search?term=${term}`)
     }
@@ -71,16 +71,6 @@ export default function HeaderSearch() {
                 {!session ? (<button onClick={() => signIn('google')}>Sign in</button>) : (<img className={styles.userIcon} src={session.user.image} alt='lol' />)}
             </div>
 
-        </div>
-        <div className={styles.headerMobile}>
-            <div className={styles.container4}>
-                <img onClick={goBack}
-                src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="google..com" />
-            </div>
-            <form className={styles.container5} onSubmit={searchIt}>
-                    
-                    <input type="search" defaultValue={router.query.term} ref={inputRef} />                    
-            </form>
         </div>
 
         </>
